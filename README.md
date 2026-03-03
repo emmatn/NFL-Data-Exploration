@@ -5,7 +5,7 @@ This repository contains data cleaning and exploratory data analysis (EDA) for a
 ## Project Overview
 
 - **Goal**: Explore how performance, demographics, and early-career metrics relate to **NFL quarterback career length**.
-- **Methods**: Data cleaning, feature engineering, and exploratory analysis in **R/RMarkdown** to prepare inputs for downstream **survival models** (e.g., time to career end, 3-year retention).
+- **Methods**: Data cleaning, feature engineering, and exploratory analysis in **R/RMarkdown** to prepare inputs for downstream **survival models** (e.g., time to career end, debut year, 3-year retention).
 - **Collaboration**: Conducted as part of a research project **under UCSB Statistics Professor [Tianyu Zhang]**.
 
 ## Repository Structure
@@ -32,10 +32,20 @@ For full variable descriptions, transformations, and cleaning logic, see:
 - [`code/Data_Documentation.Rmd`](code/Data_Documentation.Rmd)
 - (Rendered) [`code/Data_Documentation.pdf`](code/Data_Documentation.pdf), if available.
 
+## Data Notes
+- Data is derived from publicly available NFL statistics (e.g., quarterback game logs and career summaries).
+- Cleaned files include engineered features for:
+  - Debut characteristics (e.g., age at debut)
+  - Early-career performance (e.g., first 3 years)
+  - Career-level metrics for survival analysis (e.g., total seasons, games started).
+
+## License / Usage
+This project is for academic and research purposes. Please contact me before using the cleaned datasets or code in published work.
+
 ## Getting Started
 
 1. **Clone the repo**
 
-   git clone https://github.com/<your-username>/NFL-Data-Exploration.git
+   git clone https://github.com/ <your-username> /NFL-Data-Exploration.git
    cd NFL-Data-Exploration
    
