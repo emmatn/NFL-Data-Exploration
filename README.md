@@ -44,5 +44,6 @@ For full variable descriptions, transformations, and cleaning logic, see:
 1. **Clone the repo**
 
    git clone https://github.com/your-username/NFL-Data-Exploration.git
+
    cd NFL-Data-Exploration
    
