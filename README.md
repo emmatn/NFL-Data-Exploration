@@ -39,13 +39,10 @@ For full variable descriptions, transformations, and cleaning logic, see:
   - Early-career performance (e.g., first 3 years)
   - Career-level metrics for survival analysis (e.g., total seasons, games started).
 
-## License / Usage
-This project is for academic and research purposes. Please contact me before using the cleaned datasets or code in published work.
-
 ## Getting Started
 
 1. **Clone the repo**
 
-   git clone https://github.com/ <your-username> /NFL-Data-Exploration.git
+   git clone https://github.com/your-username/NFL-Data-Exploration.git
    cd NFL-Data-Exploration
    
