@@ -6,7 +6,7 @@ This repository contains data cleaning and exploratory data analysis (EDA) for a
 
 - **Goal**: Explore how performance, demographics, and early-career metrics relate to **NFL quarterback career length**.
 - **Methods**: Data cleaning, feature engineering, and exploratory analysis in **R/RMarkdown** to prepare inputs for downstream **survival models** (e.g., time to career end, debut year, 3-year retention).
-- **Collaboration**: Conducted as part of a research project **under UCSB Statistics Professor [Tianyu Zhang]**.
+- **Collaboration**: Conducted as part of a research project **under UCSB Statistics Professor Tianyu Zhang**.
 
 ## Repository Structure
 
