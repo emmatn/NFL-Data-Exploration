@@ -32,7 +32,7 @@ library(corrplot)
 
 -   **Source:** [NFL Statistics](https://www.kaggle.com/datasets/kendallgillies/nflstatistics/data) (scraped from official NFL website), [Article](https://fonseca-carlos.medium.com/predicting-qb-retirement-with-survival-analysis-or-can-data-tell-if-brady-will-play-till-50-5d0c4b8c24e9)
 
--   This data stops at 2016!
+-   Note: This data stops at 2016.
 
 -   Relevant Files Variables:
 
@@ -40,11 +40,11 @@ library(corrplot)
 
         1.  Name/Player Id (not equal amount)
         2.  Age/Birthday (use the one with less NA?), Height, Weight
-            1.  Take out Age because its calculating from Birthday to Now
-            2.  ***Maybe Calculate Debut Age?*** older rookies retire sooner
-        3.  Current Status, Current Team (alot NA), Position (82% NA)
+            1.  Age is removed because its calculating 2016-Birthday
+            2.  Calculate Debut Age for Debut Year Statistics
+        3.  Current Status, Current Team, Position (82% NA)
         4.  Experience calculated from Years Played, Years Played (18% null)
-            1.  ***EXPERIENCE IS THE SURVIVAL TIME (the OUTCOME)***
+            1.  ***Survival Time:** Experience (Outcome)*
 
     2.  Game_Logs_Quarterback
 
@@ -75,10 +75,10 @@ library(corrplot)
 ## Import Data
 
 ```{r}
-raw_player <- read_csv(here("nfl", "data", "Basic_Stats.csv"), show_col_types = FALSE)
-raw_qb_logs <- read_csv(here("nfl", "data", "Game_Logs_Quarterback.csv"), show_col_types = FALSE)
+raw_player <- read_csv(here("data", "Basic_Stats.csv"), show_col_types = FALSE)
+raw_qb_logs <- read_csv(here("data", "Game_Logs_Quarterback.csv"), show_col_types = FALSE)
 # very similar data as qb logs, but qb has a bit more 
-raw_passes <- read_csv(here("nfl", "data", "Career_Stats_Passing.csv"), show_col_types = FALSE)
+raw_passes <- read_csv(here("data", "Career_Stats_Passing.csv"), show_col_types = FALSE)
 #raw_rushing <- read_csv(here("nfl", "data", "Career_Stats_Rushing.csv"))
 #raw_fumbles <- read_csv(here("nfl", "data", "Career_Stats_Fumbles.csv"))
 ```
