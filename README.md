@@ -8,6 +8,14 @@ This repository contains data cleaning and exploratory data analysis (EDA) for a
 - **Methods**: Data cleaning, feature engineering, and exploratory analysis in **R/RMarkdown** to prepare inputs for downstream **survival models** (e.g., time to career end, debut year, 3-year retention).
 - **Collaboration**: Conducted as part of a research project **under UCSB Statistics Professor Tianyu Zhang**.
 
+## Data Documentation
+- `5_ALL_DATA.csv` is the **final** dataset for analysis and exploration use. 
+
+For full variable descriptions, transformations, and cleaning logic, see:
+
+- [`code/Data_Documentation.Rmd`](code/Data_Documentation.Rmd)
+- (Rendered) [`code/Data_Documentation.pdf`](code/Data_Documentation.pdf), if available.
+
 ## Repository Structure
 
 - `code/`
@@ -24,13 +32,6 @@ This repository contains data cleaning and exploratory data analysis (EDA) for a
   - `4_cleaned_nfl_3year.csv`
   - `5_ALL_DATA.csv`  
   These are **analysis-ready datasets** used for survival and longitudinal modeling.
-
-## Data Documentation
-
-For full variable descriptions, transformations, and cleaning logic, see:
-
-- [`code/Data_Documentation.Rmd`](code/Data_Documentation.Rmd)
-- (Rendered) [`code/Data_Documentation.pdf`](code/Data_Documentation.pdf), if available.
 
 ## Data Notes
 - Data is derived from publicly available NFL statistics (e.g., quarterback game logs and career summaries).
